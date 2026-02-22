@@ -1,12 +1,13 @@
 # sl-admin-blueprints
 
-Blueprint definitions for onboarding.
+This repository follows the same assurance standard as `sl-root-bootstrap`.
 
-NOTE:
-Blueprint schema/format is Spacelift-specific and may evolve.
-Use this repo as the front door to create customer stacks.
+## Current Scope
 
-In your trial, start with a blueprint that:
-- Creates 3 stacks (dev/test/prod) under a customer space
-- Sets stack labels: environment=dev/test/prod
-- Points them at the same repo but different branches
+- Manifest-driven settings in `manifests/blueprints-config.yaml`.
+- Contract checks in `checks.tf`.
+- Assurance gates via `scripts/assurance-gate.sh`.
+
+## Local Validation
+
+`./scripts/assurance-gate.sh`
